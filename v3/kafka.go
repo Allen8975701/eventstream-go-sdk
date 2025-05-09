@@ -456,6 +456,7 @@ func ConstructEvent(publishBuilder *PublishBuilder) (kafka.Message, *Event, erro
 		Privacy:          publishBuilder.privacy,
 		AdditionalFields: publishBuilder.additionalFields,
 		Payload:          publishBuilder.payload,
+		SourceNamespace:  publishBuilder.sourceNamespace,
 	}
 
 	eventBytes, err := marshal(event)

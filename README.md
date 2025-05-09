@@ -167,6 +167,7 @@ err := client.Publish(
 * ClientIDs : List of client IDs. Backward compatibility. ([]string - UUID v4 without Hyphens)
 * TargetUserIDs : List of target client IDs. Backward compatibility. ([]string - UUID v4 without Hyphens)
 * TargetNamespace : Target Namespace. Backward compatibility. (string)
+* SourceNamespace : Source Namespace. Usage: if the namespace is a fixed value, such as publisher namespace and event need contain the actual source namespace of this event, then we can use this field. (string  - optional)
 * Privacy : Privacy. Backward compatibility. (bool)
 * AdditionalFields : Additional fields. Backward compatibility. (map[string]interface{})
 * Payload : Additional attribute. (map[string]interface{})
